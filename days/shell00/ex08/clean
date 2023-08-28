@@ -1,0 +1,8 @@
+#find files that end with '*'
+#find -name '~*' <=> find -type f -name '~*'
+
+#find files that start and end with '#'
+#find -type f \( -name '#*#' -o -name '~*' \)
+
+#find files all the previous files and delete them
+find -type f \( -name '#*#' -o -name '~*' \) -exec rm -f {} + 
