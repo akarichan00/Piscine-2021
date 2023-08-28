@@ -1,11 +1,8 @@
 #!/bin/bash
-#first method
-cat .gitignore | sed  's/^M//'
-# sed -> stream editor for filtering and transforming text
-# 's/^M//' -> If no -e, --expression, -f, or --file option is given, then the first non-option argument is taken 
-#as the script to interpret.  All remaining arguments are names  of  input  files;  if  no  input  files  are
-#specified, then the standard input is read.
-
-#second method 
-#git clean -ndX | awk '{print $3}' 
-# awk '{print $3}' ==> cat -e
+#used for printing the last 5 commits in your git repo.
+git log --pretty=oneline | head -n 5 
+#| awk '{print $1}' => | cat -e
+#or
+#git log --pretty=format:'%H' -n5 
+#or
+#git log --format='%H' -n5
