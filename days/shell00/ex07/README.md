@@ -27,6 +27,7 @@ DESCRIPTION
 > And since there is no argument required for `diff a b > sw.diff` we just
 create a file called `b` that is just different enough to file `a` so that the
 command may work correctly.
-*Note: We **only** need to return the b file .
+------------------------------------------
+>Note: We **only** need to return the b file .
 
 ------------------------------------------
