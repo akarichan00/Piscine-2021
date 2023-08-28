@@ -5,5 +5,7 @@
 # free exp.
 ls -trhpm
 ##ls -upm
+#or we can use 
+ls -tp --format=comma #?
 #RTFM.
 #------------------------------------------------------------------------------
