@@ -1,4 +1,4 @@
-## Exercise 03: ft_strcpy
+## Exercise 00: ft_strcpy
 
 - Reproduce the behavior of the function __strcpy__ (man strcpy).
 - Here's how it should be prototyped:
